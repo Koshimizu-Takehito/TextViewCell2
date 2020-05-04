@@ -13,21 +13,11 @@
 		AB976AF42460A14700763F00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB976AF22460A14700763F00 /* Main.storyboard */; };
 		AB976AF62460A14B00763F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB976AF52460A14B00763F00 /* Assets.xcassets */; };
 		AB976AF92460A14B00763F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB976AF72460A14B00763F00 /* LaunchScreen.storyboard */; };
-		AB976B042460A14B00763F00 /* TextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB976B032460A14B00763F00 /* TextViewTests.swift */; };
+		AB976B0F2460B3F500763F00 /* SampleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB976B0E2460B3F500763F00 /* SampleItem.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AB976B002460A14B00763F00 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB976AE12460A14700763F00 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AB976AE82460A14700763F00;
-			remoteInfo = TextView;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		AB976AE92460A14700763F00 /* TextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB976AE92460A14700763F00 /* TextViewCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextViewCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB976AEC2460A14700763F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB976AEE2460A14700763F00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AB976AF02460A14700763F00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,20 +25,11 @@
 		AB976AF52460A14B00763F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB976AF82460A14B00763F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB976AFA2460A14B00763F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB976AFF2460A14B00763F00 /* TextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB976B032460A14B00763F00 /* TextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewTests.swift; sourceTree = "<group>"; };
-		AB976B052460A14B00763F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB976B0E2460B3F500763F00 /* SampleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AB976AE62460A14700763F00 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB976AFC2460A14B00763F00 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,8 +42,7 @@
 		AB976AE02460A14700763F00 = {
 			isa = PBXGroup;
 			children = (
-				AB976AEB2460A14700763F00 /* TextView */,
-				AB976B022460A14B00763F00 /* TextViewTests */,
+				AB976AEB2460A14700763F00 /* TextViewCell */,
 				AB976AEA2460A14700763F00 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,41 +50,48 @@
 		AB976AEA2460A14700763F00 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB976AE92460A14700763F00 /* TextView.app */,
-				AB976AFF2460A14B00763F00 /* TextViewTests.xctest */,
+				AB976AE92460A14700763F00 /* TextViewCell.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB976AEB2460A14700763F00 /* TextView */ = {
+		AB976AEB2460A14700763F00 /* TextViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AB976B112460B63F00763F00 /* Resource */,
+				AB976B102460B63100763F00 /* Source */,
+			);
+			path = TextViewCell;
+			sourceTree = "<group>";
+		};
+		AB976B102460B63100763F00 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				AB976AEC2460A14700763F00 /* AppDelegate.swift */,
 				AB976AEE2460A14700763F00 /* SceneDelegate.swift */,
 				AB976AF02460A14700763F00 /* ViewController.swift */,
+				AB976B0E2460B3F500763F00 /* SampleItem.swift */,
 				AB976AF22460A14700763F00 /* Main.storyboard */,
-				AB976AF52460A14B00763F00 /* Assets.xcassets */,
-				AB976AF72460A14B00763F00 /* LaunchScreen.storyboard */,
-				AB976AFA2460A14B00763F00 /* Info.plist */,
 			);
-			path = TextView;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		AB976B022460A14B00763F00 /* TextViewTests */ = {
+		AB976B112460B63F00763F00 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				AB976B032460A14B00763F00 /* TextViewTests.swift */,
-				AB976B052460A14B00763F00 /* Info.plist */,
+				AB976AF52460A14B00763F00 /* Assets.xcassets */,
+				AB976AFA2460A14B00763F00 /* Info.plist */,
+				AB976AF72460A14B00763F00 /* LaunchScreen.storyboard */,
 			);
-			path = TextViewTests;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB976AE82460A14700763F00 /* TextView */ = {
+		AB976AE82460A14700763F00 /* TextViewCell */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB976B082460A14B00763F00 /* Build configuration list for PBXNativeTarget "TextView" */;
+			buildConfigurationList = AB976B082460A14B00763F00 /* Build configuration list for PBXNativeTarget "TextViewCell" */;
 			buildPhases = (
 				AB976AE52460A14700763F00 /* Sources */,
 				AB976AE62460A14700763F00 /* Frameworks */,
@@ -114,28 +101,10 @@
 			);
 			dependencies = (
 			);
-			name = TextView;
+			name = TextViewCell;
 			productName = TextView;
-			productReference = AB976AE92460A14700763F00 /* TextView.app */;
+			productReference = AB976AE92460A14700763F00 /* TextViewCell.app */;
 			productType = "com.apple.product-type.application";
-		};
-		AB976AFE2460A14B00763F00 /* TextViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AB976B0B2460A14B00763F00 /* Build configuration list for PBXNativeTarget "TextViewTests" */;
-			buildPhases = (
-				AB976AFB2460A14B00763F00 /* Sources */,
-				AB976AFC2460A14B00763F00 /* Frameworks */,
-				AB976AFD2460A14B00763F00 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AB976B012460A14B00763F00 /* PBXTargetDependency */,
-			);
-			name = TextViewTests;
-			productName = TextViewTests;
-			productReference = AB976AFF2460A14B00763F00 /* TextViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -145,18 +114,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
-				ORGANIZATIONNAME = "Takehito Koshimizu";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					AB976AE82460A14700763F00 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
-					AB976AFE2460A14B00763F00 = {
-						CreatedOnToolsVersion = 11.4.1;
-						TestTargetID = AB976AE82460A14700763F00;
-					};
 				};
 			};
-			buildConfigurationList = AB976AE42460A14700763F00 /* Build configuration list for PBXProject "TextView" */;
+			buildConfigurationList = AB976AE42460A14700763F00 /* Build configuration list for PBXProject "TextViewCell" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -169,8 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB976AE82460A14700763F00 /* TextView */,
-				AB976AFE2460A14B00763F00 /* TextViewTests */,
+				AB976AE82460A14700763F00 /* TextViewCell */,
 			);
 		};
 /* End PBXProject section */
@@ -186,13 +150,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB976AFD2460A14B00763F00 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -200,29 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB976B0F2460B3F500763F00 /* SampleItem.swift in Sources */,
 				AB976AF12460A14700763F00 /* ViewController.swift in Sources */,
 				AB976AED2460A14700763F00 /* AppDelegate.swift in Sources */,
 				AB976AEF2460A14700763F00 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB976AFB2460A14B00763F00 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB976B042460A14B00763F00 /* TextViewTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AB976B012460A14B00763F00 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AB976AE82460A14700763F00 /* TextView */;
-			targetProxy = AB976B002460A14B00763F00 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AB976AF22460A14700763F00 /* Main.storyboard */ = {
@@ -363,7 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TextView/Info.plist;
+				INFOPLIST_FILE = TextViewCell/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TextView/Info.plist;
+				INFOPLIST_FILE = TextViewCell/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,52 +334,10 @@
 			};
 			name = Release;
 		};
-		AB976B0C2460A14B00763F00 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TextViewTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.TextViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextView.app/TextView";
-			};
-			name = Debug;
-		};
-		AB976B0D2460A14B00763F00 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TextViewTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.TextViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextView.app/TextView";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB976AE42460A14700763F00 /* Build configuration list for PBXProject "TextView" */ = {
+		AB976AE42460A14700763F00 /* Build configuration list for PBXProject "TextViewCell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB976B062460A14B00763F00 /* Debug */,
@@ -446,20 +346,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB976B082460A14B00763F00 /* Build configuration list for PBXNativeTarget "TextView" */ = {
+		AB976B082460A14B00763F00 /* Build configuration list for PBXNativeTarget "TextViewCell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB976B092460A14B00763F00 /* Debug */,
 				AB976B0A2460A14B00763F00 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AB976B0B2460A14B00763F00 /* Build configuration list for PBXNativeTarget "TextViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB976B0C2460A14B00763F00 /* Debug */,
-				AB976B0D2460A14B00763F00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
