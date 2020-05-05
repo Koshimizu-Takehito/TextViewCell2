@@ -7,76 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--私の個人主義-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextViewCell" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="280" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Df-ec-Oo0">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="740"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SampleItem" rowHeight="280" id="DA6-84-LSq" customClass="SampleItemCell" customModule="TextViewCell" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="280"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DA6-84-LSq" id="gI1-oF-EhM">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhs-u8-Bkp">
-                                                    <rect key="frame" x="20" y="11" width="44.5" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CpL-Kw-gU7">
-                                                    <rect key="frame" x="80.5" y="3" width="313.5" height="266"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="tintColor" red="0.34901960784313724" green="0.73333333333333328" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="CpL-Kw-gU7" secondAttribute="bottom" id="Ta8-0r-2ZY"/>
-                                                <constraint firstItem="CpL-Kw-gU7" firstAttribute="leading" secondItem="dhs-u8-Bkp" secondAttribute="trailing" constant="16" id="d6l-a6-6zb"/>
-                                                <constraint firstItem="dhs-u8-Bkp" firstAttribute="leading" secondItem="gI1-oF-EhM" secondAttribute="leadingMargin" id="dkd-Xj-6D6"/>
-                                                <constraint firstItem="CpL-Kw-gU7" firstAttribute="firstBaseline" secondItem="dhs-u8-Bkp" secondAttribute="firstBaseline" id="oAQ-qH-hg3"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="CpL-Kw-gU7" secondAttribute="trailing" id="u0d-26-Wq1"/>
-                                                <constraint firstItem="dhs-u8-Bkp" firstAttribute="top" secondItem="gI1-oF-EhM" secondAttribute="topMargin" id="ygZ-6n-RfK"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="label" destination="dhs-u8-Bkp" id="8ac-vn-HTD"/>
-                                            <outlet property="textView" destination="CpL-Kw-gU7" id="x8d-no-2cj"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="y36-kE-smv"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="3Df-ec-Oo0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ays-AW-Sxv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Df-ec-Oo0" secondAttribute="bottom" id="RBf-by-NFd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Df-ec-Oo0" secondAttribute="trailing" id="i5Z-8t-Wq0"/>
-                            <constraint firstItem="3Df-ec-Oo0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lHM-mW-MMM"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="私の個人主義" prompt="夏目漱石" id="xXp-yr-mbU"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="QfA-b9-LFe">
             <objects>
@@ -89,12 +19,106 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zsN-ui-lS0"/>
+                        <segue destination="Yns-Hg-AmF" kind="relationship" relationship="rootViewController" id="1QN-7i-A3V"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q02-h3-EUG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--私の個人主義-->
+        <scene sceneID="PE7-fP-9vF">
+            <objects>
+                <viewController id="Yns-Hg-AmF" customClass="ViewController" customModule="TextViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iDa-Le-ZnO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" bouncesZoom="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="770" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Juc-P4-pQs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SampleItem" rowHeight="280" id="oa8-QA-730" customClass="SampleItemCell" customModule="TextViewCell" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="280"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oa8-QA-730" id="Fds-Jt-5Qo">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVg-4R-Eld" customClass="Label" customModule="TextViewCell" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="11" width="44.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="monospaced" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L6p-qf-h6E" customClass="TextView" customModule="TextViewCell" customModuleProvider="target">
+                                                    <rect key="frame" x="79.5" y="11" width="314.5" height="258"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="tintColor" red="0.34901960780000002" green="0.73333333329999995" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="insetTop">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="insetRight">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="insetBottom">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="insetLeft">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="lineFragmentPadding">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="L6p-qf-h6E" firstAttribute="firstBaseline" secondItem="GVg-4R-Eld" secondAttribute="firstBaseline" id="7Fd-VY-SGV"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="L6p-qf-h6E" secondAttribute="bottom" id="9YV-pO-5kF"/>
+                                                <constraint firstItem="GVg-4R-Eld" firstAttribute="top" secondItem="Fds-Jt-5Qo" secondAttribute="topMargin" id="W2m-kY-wZY"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="L6p-qf-h6E" secondAttribute="trailing" id="Y4o-6z-FXa"/>
+                                                <constraint firstItem="GVg-4R-Eld" firstAttribute="leading" secondItem="Fds-Jt-5Qo" secondAttribute="leadingMargin" id="qrm-8w-as7"/>
+                                                <constraint firstItem="L6p-qf-h6E" firstAttribute="leading" secondItem="GVg-4R-Eld" secondAttribute="trailing" constant="15" id="zvs-XL-Ou0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="GVg-4R-Eld" id="2TI-cv-oSw"/>
+                                            <outlet property="textView" destination="L6p-qf-h6E" id="dyR-HQ-iiQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Yns-Hg-AmF" id="IFk-Cb-Jq3"/>
+                                    <outlet property="delegate" destination="Yns-Hg-AmF" id="I8O-Pg-tuX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xu4-bq-KcX" firstAttribute="trailing" secondItem="Juc-P4-pQs" secondAttribute="trailing" id="1zk-Ko-1DK"/>
+                            <constraint firstItem="Juc-P4-pQs" firstAttribute="top" secondItem="xu4-bq-KcX" secondAttribute="top" id="iWD-uJ-Yky"/>
+                            <constraint firstItem="Juc-P4-pQs" firstAttribute="leading" secondItem="xu4-bq-KcX" secondAttribute="leading" id="rhq-ou-2Wc"/>
+                            <constraint firstAttribute="bottom" secondItem="Juc-P4-pQs" secondAttribute="bottom" placeholder="YES" id="zcZ-wX-i7Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xu4-bq-KcX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="私の個人主義" prompt="夏目漱石" id="i8G-WP-00i"/>
+                    <connections>
+                        <outlet property="tableView" destination="Juc-P4-pQs" id="EQ8-mH-1Mb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JsN-ZJ-xhM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="138"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.34901960780000002" green="0.73333333329999995" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

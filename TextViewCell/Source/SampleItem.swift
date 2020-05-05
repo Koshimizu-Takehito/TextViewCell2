@@ -2,18 +2,16 @@
 //  SampleItem.swift
 //  TextView
 //
-//  Created by Takehito Koshimizu on 2020/05/05.
-//
 
 /// サンプル
 struct SampleItem {
     /// 行番号
     let row: String
     /// テキスト
-    let text: String
+    var text: String
 
     init(element: (offset: Int, text: String)) {
-        row = "\(element.offset) 行目"
+        row = "第 \(element.offset + 1) 段落"
         text = element.text
     }
 }
